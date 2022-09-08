@@ -252,3 +252,25 @@
 62. Nama : Ahmad Afif Aulia Hariz
 
     Link Github : https://github.com/afifhrz
+    
+63. Nama : I Putu Wira Pratama Putra
+
+    Link Github : https://github.com/wirapratamaz
+
+64. Nama : Simon Rioland S
+
+    Link Github : https://github.com/simonjuntak
+
+
+65. Nama : Kadek Frama Danamastyana
+
+    Link Github : https://github.com/kadekframa
+
+    
+66. Nama : Indah Paksi Larasati
+
+    Link Github : https://github.com/hadni17
+    
+67. Nama : Annisa Fadhilah
+
+    Link Github : https://github.com/AnnisaFdd
