@@ -16,16 +16,15 @@ fetch("./data/peserta.json")
 
 function showCards(data) {
   return `
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="pelajaran text-center">${data.pelajaran}</h3>
-          <img src=${data.gambar} class="card-img-top logo-pelajaran">
-          <p class="deskripsi text-center">${data.deskripsi}</p>
-        </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="pelajaran text-center">${data.pelajaran}</h3>
+        <img src=${data.gambar} class="card-img-top logo-pelajaran">
+        <p class="deskripsi text-center">${data.deskripsi}</p>
       </div>
     </div>
-  `
+  </div>`
 }
 
 // Loading

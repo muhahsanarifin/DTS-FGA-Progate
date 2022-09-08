@@ -20,27 +20,26 @@ function renderPeserta(persons) {
 
 function makeCard(peserta){
   return `
-    <div class="card">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <div class="card-image">
-        <img src="assets/images/ninja-ken.png" alt="">
+  <div class="card">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="card-image">
+      <img src="assets/images/ninja-ken.png" alt="">
+    </div>
+    <div class="card-body">
+      <div class="card-info">
+        <h3>${peserta.nama}</h3>
+        ${peserta.quotes ? `<p>${peserta.quotes}</p>` :  `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatem ea fugit voluptatibus repellendus alias adipisci obcaecati quos quidem quasi, rerum impedit nostrum, atque architecto dolor error corrupti incidunt eligendi facilis porro pariatur! Harum ea illo illum reiciendis laboriosam praesentium dolor nesciunt debitis sint fugit. Totam fugit deleniti modi temporibus?</p>`}
+      
       </div>
-      <div class="card-body">
-        <div class="card-info">
-          <h3>${peserta.nama}</h3>
-          ${peserta.quotes ? `<p>${peserta.quotes}</p>` :  `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatem ea fugit voluptatibus repellendus alias adipisci obcaecati quos quidem quasi, rerum impedit nostrum, atque architecto dolor error corrupti incidunt eligendi facilis porro pariatur! Harum ea illo illum reiciendis laboriosam praesentium dolor nesciunt debitis sint fugit. Totam fugit deleniti modi temporibus?</p>`}
-        
-        </div>
-        <div class="card-media">
-          <a href="${peserta.github}" target="blank">
-          <i class="fa-brands fa-github fa-2x"></i></a>
-        </div>
+      <div class="card-media">
+        <a href="${peserta.github}" target="blank">
+        <i class="fa-brands fa-github fa-2x"></i></a>
       </div>
     </div>
-  `
+  </div>`
 }
 
 const keyword = document.getElementById("nama")
