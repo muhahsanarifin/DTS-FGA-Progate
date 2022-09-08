@@ -19,8 +19,8 @@ function renderPeserta(persons) {
 }
 
 function makeCard(peserta){
-  return 
-    `<div class="card">
+  return `
+    <div class="card">
       <span></span>
       <span></span>
       <span></span>
@@ -39,7 +39,8 @@ function makeCard(peserta){
               <i class="fa-brands fa-github fa-2x"></i></a>
           </div>
       </div>
-  </div>`
+    </div>
+  `
 }
 
 const keyword = document.getElementById("nama")
@@ -72,5 +73,4 @@ function renderInstructor(instructor) {
       quotes.textContent = instructor.quotes
   }
   github.href = instructor.github
-
 }

@@ -15,8 +15,8 @@ fetch("./data/peserta.json")
     })
 
 function showCards(data) {
-  return 
-  `<div class="col-md-4">
+  return `
+    <div class="col-md-4">
       <div class="card">
           <div class="card-body">
               <h3 class="pelajaran text-center">${data.pelajaran}</h3>
@@ -24,7 +24,8 @@ function showCards(data) {
               <p class="deskripsi text-center">${data.deskripsi}</p>
           </div>
       </div>
-  </div>`
+    </div>
+  `
 }
 
 // Loading
