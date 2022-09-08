@@ -7,22 +7,22 @@ document.querySelector(".title").innerHTML = title;
 fetch("./data/peserta.json")
     .then(resp => resp.json())
     .then(resp => {
-        const pelajaran = resp.tema;
-        let cards = '';
-        pelajaran.forEach(data => cards += showCards(data));
-        const listPelajaran = document.querySelector(".list-pelajaran");
-        listPelajaran.innerHTML = cards;
+      const pelajaran = resp.tema;
+      let cards = '';
+      pelajaran.forEach(data => cards += showCards(data));
+      const listPelajaran = document.querySelector(".list-pelajaran");
+      listPelajaran.innerHTML = cards;
     })
 
 function showCards(data) {
   return `
     <div class="col-md-4">
       <div class="card">
-          <div class="card-body">
-              <h3 class="pelajaran text-center">${data.pelajaran}</h3>
-              <img src=${data.gambar} class="card-img-top logo-pelajaran">
-              <p class="deskripsi text-center">${data.deskripsi}</p>
-          </div>
+        <div class="card-body">
+          <h3 class="pelajaran text-center">${data.pelajaran}</h3>
+          <img src=${data.gambar} class="card-img-top logo-pelajaran">
+          <p class="deskripsi text-center">${data.deskripsi}</p>
+        </div>
       </div>
     </div>
   `
@@ -47,14 +47,14 @@ document.addEventListener("DOMContentLoaded", () => wait(2500).then (() => {
 //get quote random with api
 fetch('https://api.quotable.io/random').then((response)=>{
     if(response.status != 200) {
-        console.log("Error " + response.status)
-        return
+      console.log("Error " + response.status)
+      return
     }
     response.json().then((data)=>{
-        const quote = data;
-        document.querySelector(".quote").insertAdjacentHTML('beforeend', 
-            `<h3>${quote.author}</h3>
-            <i>${quote.content}</i>`
-        )
+      const quote = data;
+      document.querySelector(".quote").insertAdjacentHTML('beforeend', 
+        `<h3>${quote.author}</h3>
+        <i>${quote.content}</i>`
+      )
     })
 })
