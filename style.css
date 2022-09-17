@@ -2,11 +2,11 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: white;
-  font-family: "Poppins";
 }
 
 main, .kelas, .quotes {
@@ -14,7 +14,6 @@ main, .kelas, .quotes {
 }
 
 header {
-  /*border: 2px solid blue;*/
   background-image: linear-gradient(black, black), url('assets/images/gambar2.png');
   background-size: cover;
   background-blend-mode: saturation;
@@ -27,7 +26,6 @@ nav {
   background-color: #8d7cc2;
   padding: 10px;
   text-align: right;
-  /* border: 2px solid red; */
 }
 
 .flex-column {
@@ -38,23 +36,19 @@ nav {
 .flex-row {
   display: flex;
   flex-direction: row;
-  /*border: 2px solid red;*/
+  justify-content: center;
 }
 
 .box {
-  flex-basis: 25%;
-  /*border: 2px solid red;*/
-  text-align: center;
-}
-
-.full {
   flex-basis: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .half {
   flex-basis: 50%;
-  /*border: 2px solid blue; */
   height: 30px;
 }
 
@@ -74,23 +68,21 @@ h1 span {
   color: red;
 }
 
-
 .button {
   text-decoration: none;
   justify-content: center;
   color: white;
   padding: 10px 20px;
-  
   background-color: #8d7cc2;
   border-radius: 4px;
+  width: 145px;
 }
 
 .button:hover {
-    color: #44414c;
+  color: #44414c;
 }
 
 .kelas .title {
-  /*border: 2px solid blue;*/
   color: #44414c;
   text-align: center;
   padding: 30px;
@@ -130,9 +122,7 @@ footer {
   font-size: 15px;
 }
 
-
-/* Loading */
-
+/* || Loading */
 .page {
   display: none;
 }
@@ -151,7 +141,7 @@ footer {
   
 }
 
-/* Image Loading */
+/* || Image Loading */
 #loading {
   background-image: url(assets/gif/infinity-loading.gif);
   background-repeat: no-repeat;
@@ -187,8 +177,7 @@ footer {
   .btn-wrapper {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    margin: 0 auto;
+    align-items: center;
   }
 
   main, .kelas, .quotes {
@@ -197,11 +186,11 @@ footer {
 
   #loading {
     background-size: 64px;
- }
+  }
 
- footer {
-  font-size: 10px;
- }
+  footer {
+    font-size: 10px;
+  }
 }
 
 @media screen and (min-width: 991.98px) {
@@ -235,4 +224,3 @@ footer {
     height: max-content;
   }
 }
-

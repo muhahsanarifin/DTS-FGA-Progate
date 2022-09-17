@@ -4,7 +4,6 @@ function getPeserta() {
   .then(data =>{
     renderInstructor(data.instructur[0])
     renderPeserta(data.peserta)
-
   })
 }  
 
